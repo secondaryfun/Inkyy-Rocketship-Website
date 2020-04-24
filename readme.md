@@ -1,1 +1,1 @@
-Objective: Build a Responsive Website.
+First Website Assignment

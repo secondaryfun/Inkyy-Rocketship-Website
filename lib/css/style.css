@@ -1,0 +1,127 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+/* GENERAL STYLING */
+@media screen {
+
+    html {
+        font: 16px Poppins;
+        font-weight: 300;
+    }
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 3.125rem;
+    }
+    h2 {
+        font-size: 3.4375rem;
+        color: #ffffff;
+        font-weight: 600;
+        line-height: 3.75rem;
+    }
+    h3 {
+        font-size: 1.5625rem;
+        font-weight: 600;
+        line-height: 3.125rem;
+        color: color: #0e77ff;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.875rem;
+    }
+    .p--blue {
+        color: #9abfff;
+    }
+    a {
+        font-size: 1.125rem;
+        font-weight: 400px;
+        color: #ffffff;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
+    button {
+        width: 15rem;
+        height: 4.5rem;
+        border-radius: 2.25rem;
+        border: none;
+        font: 1.5625rem Muli;
+    }
+    .btn-square {
+        width: 9.9375rem;
+        height: 3.3125rem;
+        color: #ffffff;
+        font: 1.125rem Poppins;
+        font-weight: 400;
+        border-radius: 5px;
+        color: black;
+    }
+    /* CARD STYLING */
+    .card_wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+    .card_name {
+        color: #0e77ff;
+    }
+    .card_title {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+
+/* <<<<<<<<<<<<SCREEN LAYOUT>>>>>>>>>>>>> */
+@media screen {
+   body {
+       background-color: #0e77ff;
+    }
+    ul {
+        display:flex;
+        flex-flow: row nowrap;
+    }
+    .lp_wrapper {
+        background-color: #0e77ff;
+        background-image: url("../images/layout/landing-page-background-1900x1200.jpg");
+        background-size: cover;
+        display: grid;
+        grid-template-rows: repeat(12, minmax(200px, 1fr));
+        column-gap: 1rem;
+        width: 1900px;
+        height: 1200px;
+        overflow: auto;
+        margin: 0 auto;
+    }
+    
+    .lp_h1 {
+        font-size: 3rem;
+        color: #ffffff;
+    }
+}
+
+/* <<<<<<<<<<<<RESPONSIVE>>>>>>>>>>>>> */
+/* Xtra small devices (portrait phones) */
+@media screen and (max-width: 576px) {
+    html {font-size: 12px}
+   
+    a {
+        font-size: 2rem;
+    }
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media screen and (min-width: 768px) {
+    
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    
+  }
