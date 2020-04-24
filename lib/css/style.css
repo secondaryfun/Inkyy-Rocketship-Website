@@ -7,11 +7,19 @@
     html {
         font: 16px Poppins;
         font-weight: 300;
+        box-sizing: border-box;
     }
+    body {
+        background-color: #0e77ff;
+     }
     h1 {
         font-size: 2.25rem;
         font-weight: 600;
         line-height: 3.125rem;
+    }
+    .lp_h1 {
+        font-size: 3rem;
+        color: #ffffff;
     }
     h2 {
         font-size: 3.4375rem;
@@ -37,8 +45,9 @@
         font-weight: 400px;
         color: #ffffff;
         text-decoration: none;
-        width: 100%;
         height: 100%;
+        word-wrap: none;
+        margin: 0 1.25rem;
     }
     button {
         width: 15rem;
@@ -46,15 +55,15 @@
         border-radius: 2.25rem;
         border: none;
         font: 1.5625rem Muli;
+        background-color: #ffffff;
+        color: black;
     }
     .btn-square {
         width: 9.9375rem;
         height: 3.3125rem;
-        color: #ffffff;
         font: 1.125rem Poppins;
         font-weight: 400;
         border-radius: 5px;
-        color: black;
     }
     /* CARD STYLING */
     .card_wrapper {
@@ -73,29 +82,46 @@
 
 /* <<<<<<<<<<<<SCREEN LAYOUT>>>>>>>>>>>>> */
 @media screen {
-   body {
-       background-color: #0e77ff;
-    }
-    ul {
-        display:flex;
-        flex-flow: row nowrap;
+    .wrapper {
+        max-width: 1900px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 3fr 4fr 3fr;
+        column-gap: 5px;
     }
     .lp_wrapper {
-        background-color: #0e77ff;
-        background-image: url("../images/layout/landing-page-background-1900x1200.jpg");
-        background-size: cover;
-        display: grid;
-        grid-template-rows: repeat(12, minmax(200px, 1fr));
-        column-gap: 1rem;
-        width: 1900px;
-        height: 1200px;
-        overflow: auto;
-        margin: 0 auto;
+        grid-template-areas: 
+            "left head head head head head head head head head head right"
+            "left main main main main main main null null null null right"
+            "left foot foot foot foot foot foot foot foot foot foot right";
     }
-    
-    .lp_h1 {
-        font-size: 3rem;
-        color: #ffffff;
+    .wrapper-img--bottom {
+        justify-self: stretch;
+        align-self: end;
+        grid-row: 2 / span 2;
+        grid-column: 1 / span 12;
+        z-index: -1;
+    }
+    .wrapper-header {
+        grid-area: head;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .wrapper-header_nav {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    .wrapper-main {
+        grid-area: main;
+    }
+    .about_wrapper {
+        grid-template-areas: 
+            "left head head head head head head head head head head right"
+            "left null null null null null null main main main main right"
+            "left foot foot foot foot foot foot foot foot foot foot right";
     }
 }
 
