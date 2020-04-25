@@ -10,10 +10,10 @@
         box-sizing: border-box;
     }
     body {
-        background-color: #0e77ff;
+        background-color: #ffffff;
      }
     h1 {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
         font-weight: 600;
         line-height: 3.125rem;
     }
@@ -36,6 +36,7 @@
     p {
         font-size: 1rem;
         line-height: 1.875rem;
+        margin: 3.125rem 0;
     }
     .p--blue {
         color: #9abfff;
@@ -46,8 +47,8 @@
         color: #ffffff;
         text-decoration: none;
         height: 100%;
-        word-wrap: none;
         margin: 0 1.25rem;
+        padding: 1.03125rem 0;
     }
     button {
         width: 15rem;
@@ -57,6 +58,7 @@
         font: 1.5625rem Muli;
         background-color: #ffffff;
         color: black;
+        border: 1px solid #0e77ff;
     }
     .btn-square {
         width: 9.9375rem;
@@ -78,6 +80,15 @@
         display: flex;
         flex-flow: row nowrap;
     }
+    .card_h2 {
+        color: black;
+        font-size: 1.375rem;
+        line-height: 2rem;
+        margin-top: 3rem;
+    }
+    .card_button {
+        color: #0e77ff;
+    }
 }
 
 /* <<<<<<<<<<<<SCREEN LAYOUT>>>>>>>>>>>>> */
@@ -90,18 +101,24 @@
         grid-template-rows: 3fr 4fr 3fr;
         column-gap: 5px;
     }
+    .wrapper-img {
+        justify-self: stretch;
+        align-self: start;
+        grid-row: 1 / span 3;
+        grid-column: 1 / span 12; 
+    }
     .wrapper-img--bottom {
         justify-self: stretch;
         align-self: end;
         grid-row: 2 / span 2;
         grid-column: 1 / span 12;
-        z-index: -1;
     }
     .wrapper-header {
         grid-area: head;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 1;
     }
     .wrapper-header_nav {
         display: flex;
@@ -110,12 +127,24 @@
     }
     .wrapper-main {
         grid-area: main;
+        display: flex;
+        flex-flow: column nowrap;
+        grid-gap: 50px 50px;
+        justify-content: center;
+        z-index: 1;
+    }
+    .card_wrapper {
+        display: flex;
+        flex-flow: column;
+        justify-content: start;
+        gap: 3.125rem;
     }
     .lp_wrapper {
         grid-template-areas: 
             "left head head head head head head head head head head right"
             "left main main main main main main null null null null right"
             "left foot foot foot foot foot foot foot foot foot foot right";
+        background-color: #0e77ff;
     }
     .about_wrapper {
         grid-template-areas: 
@@ -123,6 +152,27 @@
             "left null null null null null null main main main main right"
             "left foot foot foot foot foot foot foot foot foot foot right";
         background: white;
+    }
+    .services_wrapper {
+        grid-template-areas: 
+            "left null null null null null null null null null null right"
+            "left head head head head head main main main main main right"
+            "left foot foot foot foot foot foot foot foot foot foot right";
+        background: white;
+    }
+    .services-card {
+        /* width: 30%; */
+    }
+    .services-nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+    }
+    .services_h1 {
+        text-align: left;
+    }
+    .services_section {
+        display: none;
     }
 }
 
