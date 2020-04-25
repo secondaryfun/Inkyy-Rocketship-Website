@@ -1,7 +1,7 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-/* GENERAL STYLING */
+/*<<<<<<<<<<<<TEXT LAYOUT>>>>>>>>>>>>>>>>*/
 @media screen {
 
     html {
@@ -50,6 +50,9 @@
         margin: 0 1.25rem;
         padding: 1.03125rem 0;
     }
+}
+/*<<<<<<<<<<<<BUTTONS & ARROWS>>>>>>>>>>>*/
+@media screen {
     button {
         width: 15rem;
         height: 4.5rem;
@@ -84,7 +87,19 @@
         background-color: #0e77ff;
         color: #ffffff;
     }
-    /* CARD STYLING */
+    .services_nav_btn:hover {
+        background-color: #0e77ff;
+        color: #ffffff;
+    }
+    .nav-arrows_left:hover {
+        content: url("../images/layout/arrow-blue-left-lg.png");
+    }
+    .nav-arrows_right:hover {
+        content: url("../images/layout/arrow-blue-right-lg.png");
+    }
+}
+/*<<<<<<<<<<<<CARD STYLING>>>>>>>>>>>*/
+@media screen {
     .card_wrapper {
         display: flex;
         flex-flow: column nowrap;
@@ -106,8 +121,15 @@
     .card_button {
         color: #0e77ff;
     }
+/* FIX CLASS NAME -> NOT A BUTTON. IS A LIST */
+    
+    .p-list_btn p {
+        padding-left: 1rem;        
+    }
+    .p-list_btn > * {
+        display: inline;
+    }
 }
-
 /* <<<<<<<<<<<<SCREEN LAYOUT>>>>>>>>>>>>> */
 @media screen {
     .wrapper-large {
@@ -156,6 +178,17 @@
         flex-flow: column;
         justify-content: start;
     }
+    .grid-left {
+        grid-area: left;
+        z-index: 1;
+    }
+    .grid-right {
+        grid-area: right;
+        z-index: 1;
+    }
+}
+/*<<<<<<<<<<<<LANDING PAGE>>>>>>>>>>>*/
+@media screen {
     .lp_wrapper {
         grid-template-areas: 
             "left head head head head head head head head head head right"
@@ -163,6 +196,9 @@
             "left foot foot foot foot foot foot foot foot foot foot right";
         background-color: #0e77ff;
     }
+}
+/*<<<<<<<<<<<<ABOUT PAGE>>>>>>>>>>>*/
+@media screen {
     .about_wrapper {
         grid-template-areas: 
             "left head head head head head head head head head head right"
@@ -170,6 +206,9 @@
             "left foot foot foot foot foot foot foot foot foot foot right";
         background: white;
     }
+}
+/*<<<<<<<<<<<<SERVICES PAGE>>>>>>>>>>>*/
+@media screen {
     .services_wrapper {
         grid-template-rows: 8.875rem 3fr 8.875rem;
         grid-template-columns: repeat(12, 1fr);
@@ -217,16 +256,126 @@
     .services-section_header > * {
         margin: 0 1rem;
     }
-    .p-list_btn {
+}
+/*<<<<<<<<<<<<WORKFLOW PAGE>>>>>>>>>>>*/
+@media screen {
+    .workflow-wrapper {
+        grid-template-rows: 18.75rem 1fr 3fr 18.75rem 12.5rem 1fr 2fr 12.5rem;
+        grid-template-columns: repeat(12, 1fr);
+        
+        grid-template-areas: 
+            "left null null null null null null null null null null right"
+            "left null null null head head head head null null null right"
+            "left main main main main main main main main main main right"
+            "left null null null null null null null null null null right"
+            "left null null null null null null null null null null right"
+            "left null null tech tech tech tech tech tech null null right"
+            "left null icon icon icon icon icon icon icon icon null right"
+            "left foot foot foot foot foot foot foot foot foot foot right";
+        background: #ffffff;
+    }
+    .workflow-img {
+        grid-row: 4 / span 2;
+        grid-column: 1 / span 2;
+        object-fit: contain;
+    }
+    .workflow-header {
+        /* grid-area: head; */
+        grid-row: 2 / span 1;
+        grid-column: 5 / span 4;
+        z-index: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;        
+    }
+    .workflow-main {
+        /* grid-area: main; */
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 10;
+        display: flex;
+        flex-flow: row wrap;
+        z-index: 1;
+        justify-content: center;
+    }
+    .workflow-card {
+        width: 22%;
+        background: #ffffff;
 
     }
-    .p-list_btn p {
-        padding-left: 1rem;        
+    .coretech-wrapper {
+        grid-row: 5 / span 4;
+        grid-column: 1 / span 12;
+        background-color: rgba(14, 119, 255,.02);
+        z-index: 0;
     }
-    .p-list_btn > * {
-        display: inline;
+    .coretech-header {
+        /* grid-area: tech; */
+        grid-row: 6 / span 1;
+        grid-column: 5 / span 4;
+        z-index: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .coretech-header_nav-a {
+        color: black;
+    }
+    .coretech-aside {
+        /* grid-area: icon; */
+        grid-row: 7 / span 1;
+        grid-column: 3 / span 8;
+        z-index: 1;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
     }
 }
+/*<<<<<<<<<<<<TESTIMONIALS PAGE>>>>>>>>>>>*/
+@media screen {
+    .testimonials-wrapper {
+        grid-template-rows: 1fr;
+        grid-template-columns: [left] 1fr [right] 1fr;
+        grid-template-areas: 
+            "left right";
+        background: white;
+    }
+    .testimonials-aside {
+        display: flex;
+        background: #0e77ff;
+        justify-content: flex-end;
+    }
+    .testimonials-aside-img-2 {
+        align-self: flex-start;
+        justify-self: flex-end;
+    }
+    .testimonials-aside-img {
+        place-self: center;
+        border: #ffffff 3rem solid;
+        border-radius: 50%;
+        background: white;
+    }
+    .testimonials-main {
+        display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row-reverse nowrap;
+    }
+    .testimonials-main_dots-img-2 {
+        align-self: flex-end;
+    }
+    .testimonials-main_card {
+        margin: 11.25rem 5rem;
+    }
+    .atom-icon {
+        width: 5rem;
+        margin: 3.125rem;
+        margin-left: 0;
+    }
+/*<<<<<<<<<<<<CASES PAGE>>>>>>>>>>>*/
+@media screen {
+
+}
+
 
 /* <<<<<<<<<<<<RESPONSIVE>>>>>>>>>>>>> */
 /* Xtra small devices (portrait phones) */
