@@ -132,7 +132,10 @@
 }
 /* <<<<<<<<<<<<SCREEN LAYOUT>>>>>>>>>>>>> */
 @media screen {
-    .wrapper-large {
+    .hidden {
+        display: none;
+    }   
+    .wrapper--large {
         max-width: 1900px;
         margin: 0 auto;
         display: grid;
@@ -166,6 +169,24 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+    }
+    .wrapper-header--centered {
+        /* grid-area: head; */
+        grid-row: 2 / span 1;
+        grid-column: 5 / span 4;
+        z-index: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;        
+    }
+    .wrapper-main--centered {
+        /* grid-area: main; */
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 10;
+        display: flex;
+        flex-flow: row wrap;
+        z-index: 1;
+        justify-content: center;
     }
     .wrapper-main {
         grid-area: main;
@@ -279,24 +300,7 @@
         grid-column: 1 / span 2;
         object-fit: contain;
     }
-    .workflow-header {
-        /* grid-area: head; */
-        grid-row: 2 / span 1;
-        grid-column: 5 / span 4;
-        z-index: 1;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;        
-    }
-    .workflow-main {
-        /* grid-area: main; */
-        grid-row: 3 / span 1;
-        grid-column: 2 / span 10;
-        display: flex;
-        flex-flow: row wrap;
-        z-index: 1;
-        justify-content: center;
-    }
+
     .workflow-card {
         width: 22%;
         background: #ffffff;
@@ -371,9 +375,17 @@
         margin: 3.125rem;
         margin-left: 0;
     }
+}
 /*<<<<<<<<<<<<CASES PAGE>>>>>>>>>>>*/
 @media screen {
-
+    .cases-wrapper {
+        grid-template-rows: 12.5rem 1fr 12.5rem;
+        grid-template-areas: 
+            "left null null null null null null null null null null right"
+            "left null null null null null null null null null null right"
+            "left null null null null null null null null null null right";
+            background: rgba(14, 119, 255,.02);
+    }
 }
 
 
