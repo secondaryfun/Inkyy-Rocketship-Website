@@ -236,8 +236,7 @@
         justify-self: stretch;
         align-self: end;
         grid-row: 2 / span 2;
-        grid-column: 1 / span 12;
-        
+        grid-column: 1 / span 12;        
     }
     .wrapper-header {
         grid-area: head;
@@ -295,9 +294,24 @@
         z-index: 1;
     }
 }
+/*<<<<<<<<<<<<BODY NAV>>>>>>>>>>>*/
+@media screen {
+    .body-nav {
+        grid-template-rows: auto;
+        position: -webkit-sticky;
+        position: sticky;
+        top: -1px;
+        background: #0e77ff;
+        z-index: 2;
+    }
+    .body-wrapper_header {
+        grid-column: 2 / span 10;
+    }
+}
 /*<<<<<<<<<<<<LANDING PAGE>>>>>>>>>>>*/
 @media screen {
     .lp_wrapper {
+        grid-template-rows: 10% 4fr 3fr;
         grid-template-areas: 
             "left head head head head head head head head head head right"
             "left main main main main main main null null null null right"
