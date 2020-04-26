@@ -148,7 +148,7 @@
         justify-content: center;
         align-items: center;
     }
-    .services_nav_btn--active {
+    .services-card_nav .active {
         background-color: #0e77ff;
         color: #ffffff;
     }
@@ -169,10 +169,10 @@
         position: relative;
         top: -1rem;
     }
-    .workflow-card_button--active {
-        color: #ffffff;
-        background-color: #0e77ff;
-    }
+        .workflow-card_button--center {
+            color: #ffffff;
+            background-color: #0e77ff;
+        }
     .nav-arrows {
         height: 3rem;
         width: 4rem;
@@ -392,7 +392,7 @@
     .services-section div {
         margin-top: 1rem;
     }
-    .services-section--active {
+    .services-main > .active {
         display: flex;
         flex-direction: column;
     }
@@ -425,11 +425,10 @@
     }
     .workflow-card {
         width: 25%;
-        /* background: #ffffff; */
         text-align: justify;
         padding: 3rem;
     }
-    .workflow-card--active {
+    .workflow-card--center {
         box-shadow: 0 30px 60px rgba(14, 119, 255, 0.15);
         background-color: #ffffff;
     }
@@ -474,7 +473,7 @@
         .coretech-header_nav_span:last-child {
             border: none;
         }
-        .coretech-header_nav_span--active {
+        .coretech-header_nav > .active {
             color: #0e77ff;
         }
     .coretech-aside {
