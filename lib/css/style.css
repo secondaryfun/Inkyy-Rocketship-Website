@@ -109,6 +109,9 @@
 }
 /*<<<<<<<<<<<<BUTTONS & ARROWS>>>>>>>>>>>*/
 @media screen {
+    button {
+        border: none;
+    }
     .call-to-action-btn {
         width: 15rem;
         height: 4.5rem;
@@ -672,10 +675,108 @@
 /* Xtra small devices (portrait phones) */
 @media screen and (max-width: 576px) {
     html {font-size: 12px}
-   
-    a {
-        font-size: 2rem;
+    .wrapper--large,.wrapper--large > *,.wrapper--large > * > * {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
+    .body-nav, .lp_wrapper {
+        position: unset;
+    }
+    .hide-on-small, .body-wrapper_header_logo, .call-to-action-btn, .testimonials-aside, .testimonials-main_dots-img-2 {
+        display: none;
+    }
+    .sticky-on-small {
+        display: flex;
+        justify-content: center;
+        position: -webkit-sticky;
+        position: sticky;
+        top: -1px;
+        background-color: #0e77ff;
+        z-index: 4;
+    }
+    .wrapper-header_nav {
+        background-color: #ffffff;
+        justify-content: center;
+    }
+    .wrapper-header_nav > * {
+        width: 100%;
+        border-radius: 1rem;
+        text-align: center;
+        font-size: 2rem;
+        background-color: #0e77ff;
+        border-top: 1px solid #ffffff;
+    }
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .call-to-action-btn {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    .call-to-action-btn img {
+        transform: rotate(90deg);
+    }
+    .card_title {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        justify-content: space-around;
+        border-bottom: #0e77ff solid 5px;
+    }
+    .card_icon  {
+        font-size: 3rem;
+    }
+    .services-card_nav {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .services-section {
+        display: none;
+    }
+    .services-section .active {
+        margin: 0;
+        padding: 2rem;
+        width: 100%;
+    }
+    .services-section .card_title {
+        border: none;
+    }
+    .workflow-img {
+        width: 80%;
+        position: relative;
+        bottom: -10rem;
+    }
+    .workflow-header {
+        padding: 2rem;
+        background: #0e77ff
+    }
+    .workflow-card {
+        width: 80%;
+    }
+    .coretech-header {
+        background: #0e77ff;
+        border: none;
+    }
+    .coretech-aside {
+        display: none;
+    }
+    #coretechAside-1, .coretech-aside .active {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .coretech-header_nav {
+        display: flex;
+    }
+    .icon-box {
+        width: auto;
+    }
+    
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
   }

@@ -9,10 +9,15 @@
 </head>
 <body>
 <div class="body-wrapper">
+    <div class="sticky-on-small hidden">
+        <a href="#"><img class="background-img inkyy-logo" src="images/layout/logo.svg" alt="inkyy.com"></a>
+    </div>
     <div class="wrapper--large body-nav">
 
-        <header class="body-wrapper_header wrapper-header">
-            <img class="background-img" src="images/layout/logo.svg" alt="inkyy.com">
+        <header class="wrapper-header body-wrapper_header">
+            <div class="body-wrapper_header_logo">
+                <a href="#"><img class="background-img inkyy-logo" src="images/layout/logo.svg" alt="inkyy.com"></a>
+            </div>
             <nav class="wrapper-header_nav">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
@@ -24,8 +29,8 @@
         </header>
     </div>
     <div class="lp_wrapper wrapper--large" id="home">
-        <img class="wrapper-img--bottom" src="images/layout/rocketship.png" alt="rocketship">
-        <main class="wrapper-main">
+        <img class="wrapper-img--bottom lp-wrapper_img" src="images/layout/rocketship.png" alt="rocketship">
+        <main class="wrapper-main lp-main">
             <h2 class="lp_h2">Freebie Web Design
                 Web Development Template
                 by inkyy.com</h2>
@@ -34,7 +39,7 @@
         </main>
     </div>
     <div class="about_wrapper wrapper--large" id="about">
-        <img src="images/layout/about-background.png" alt="cards" class="wrapper-img">
+        <img src="images/layout/about-background.png" alt="cards" class="wrapper-img .hide-on-small">
         <div class="card_wrapper about_card wrapper-main">
             <header class="about_header card_title">
                 <img src="images/layout/h3-arrow.png" alt="arrow" class="card_icon">
@@ -184,7 +189,7 @@
     </div>
     <div class="workflow-wrapper wrapper--large" id="workflow">
         <div class="coretech-wrapper" id="coretech"></div>
-        <img src="images/layout/workflow-triangles.svg" alt="triangles" class="workflow-img">
+        <img src="images/layout/workflow-triangles.svg" alt="triangles" class="workflow-img ">
         <header class="workflow-header wrapper-header--centered">
             <h1>Workflow</h1>
             <p class="centered-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -221,7 +226,7 @@
             <span id="coretechNav-3" class="coretech-header_nav_span">Marketing</span>
             </nav>
         </header>
-        <aside class="coretech-aside" id="coretechAside-1">
+        <aside class="coretech-aside active" id="coretechAside-1">
             <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
             <div class="icon-box"><img src="images/layout/icons/node-icon.png" alt="" class="coretech-aside_icon"></div>
             <div class="icon-box"><img src="images/layout/icons/rad-icon.png" alt="" class="coretech-aside_icon"></div>
