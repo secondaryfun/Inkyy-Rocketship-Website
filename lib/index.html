@@ -30,7 +30,7 @@
                 Web Development Template
                 by inkyy.com</h2>
             <p class="lp_p p--blue">Our products are fully custom-made, built with the latest technologies and cloud-architectures. </p>
-            <button class="lp_button call-to-action-btn call-to-action-btn--grey">Get Started <img src="images/layout/double-close-tag.png" alt="double close tag"></button>
+            <button class="lp_button call-to-action-btn">Get Started <img src="images/layout/double-close-tag.png" alt="double close tag"></button>
         </main>
     </div>
     <div class="about_wrapper wrapper--large" id="about">
@@ -185,27 +185,27 @@
     <div class="workflow-wrapper wrapper--large" id="workflow">
         <div class="coretech-wrapper" id="coretech"></div>
         <img src="images/layout/workflow-triangles.svg" alt="triangles" class="workflow-img">
-        <header class="wrapper-header--centered">
+        <header class="workflow-header wrapper-header--centered">
             <h1>Workflow</h1>
             <p class="centered-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </header>
         <main class="wrapper-main--centered">
             <div class="card_wrapper workflow-card">
-                <div class="services_nav_btn">step 1</div>
+                <button class="workflow-card_button">step 1</button>
                 <h1 class="workflow-card_name">Send your brief</h1>
                 <div class="line-break line-break--blue"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio doloremque quaerat, voluptas id est ab ipsa blanditiis.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio doloremque quaerat, voluptas id est ab ipsa blanditiis.</p>
             </div>
-            <div class="card_wrapper workflow-card">
-                <div class="services_nav_btn">step 2</div>
+            <div class="card_wrapper workflow-card workflow-card--active">
+                <button class="workflow-card_button workflow-card_button--active">step 2</button>
                 <h1 class="workflow-card_name">Wait for delivery</h1>
                 <div class="line-break line-break--blue"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio doloremque quaerat, voluptas id est ab ipsa blanditiis.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio doloremque quaerat, voluptas id est ab ipsa blanditiis.</p>
             </div>
             <div class="card_wrapper workflow-card">
-                <div class="services_nav_btn">step 3</div>
+                <button class="workflow-card_button">step 3</button>
                 <h1 class="workflow-card_name">Get your files!</h1>
                 <div class="line-break line-break--blue"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio doloremque quaerat, voluptas id est ab ipsa blanditiis.</p>
@@ -215,26 +215,41 @@
         <header class="coretech-header">
             <h1>Core Technologies</h1>
             <p class="centered-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum minima laudantium exercitationem.</p>           
-            <nav class="coretech-heaver_nav button">
-            <a href="#" class="coretech-header_nav-a">Design</a>
-            <a href="#" class="coretech-header_nav-a">Development</a>
-            <a href="#" class="coretech-header_nav-a">Marketing</a>
+            <nav class="coretech-header_nav nowrap call-to-action-btn">
+            <span class="coretech-header_nav_span coretech-header_nav_span--active">Design</span>
+            <span class="coretech-header_nav_span">Development</span>
+            <span class="coretech-header_nav_span">Marketing</span>
             </nav>
         </header>
-        <aside class="coretech-aside">
+        <aside class="coretech-aside" id="coretechAside-1">
             <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/node-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/rad-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/security-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/aws-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/sf-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/js-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/cloud-icon.png" alt="" class="coretech-aside_icon"></div>
+        </aside>
+        <aside class="coretech-aside hidden" id="coretechAside-2">
             <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/aws-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/node-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/rad-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/security-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/sf-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/js-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/cloud-icon.png" alt="" class="coretech-aside_icon"></div>
+        </aside>
+        <aside class="coretech-aside hidden" id="coretechAside-3">
             <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
-            <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
-            <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
-            <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
-            <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
-            <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
-            <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
-            <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
-            <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
-            <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
-            <div class="icon-box"><img src="images/layout/icons/atom-icon.jpg" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/node-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/rad-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/security-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/sf-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/js-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/aws-icon.png" alt="" class="coretech-aside_icon"></div>
+            <div class="icon-box"><img src="images/layout/icons/cloud-icon.png" alt="" class="coretech-aside_icon"></div>
         </aside>
     </div>
     <div class="testimonials-wrapper wrapper--large" id="testimonials">
@@ -394,7 +409,7 @@
 
 </div>
 </body>
-
+<script type="text/javascript" src="js/main.js"></script>
 
 </html>
 
