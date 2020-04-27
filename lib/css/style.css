@@ -364,12 +364,15 @@
         grid-template-columns: repeat(12, 1fr);
         
         grid-template-areas: 
-            "left head head head head head head head head head head right"
-            "left null null null null null null main main main main right"
-            "left foot foot foot foot foot foot foot foot foot foot right";
+            "left head head head head head head head head head head ."
+            "left null null null null null null main main main main main"
+            "left foot foot foot foot foot foot foot foot foot foot .";
         background: rgba(14, 119, 255,.02);
     }
-    
+    .services-main: {
+        grid-column: 8 / span 4;
+        grid-row: 2 / span 1;
+    }
     .services-aside {
         grid-column: 10 / span 3;
         grid-row: 1 / span 3;
@@ -387,8 +390,8 @@
     }
      .services-section {
         display: none;
-        margin-left: 3rem;
-        width: 100%;
+        /* margin-left: 3rem; */
+        width: 80%;
         background-color: #ffffff;
         box-shadow: 0 30px 60px rgba(14, 119, 255, 0.15);
         padding: 3.125rem;
@@ -817,21 +820,30 @@
     .contact-footer_list_row .card_title {
         justify-content: center;
     }
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {
-  }
-  
+}
   /* Medium devices (tablets, 768px and up) */
-  @media screen and (min-width: 768px) {
-    
+  @media screen and (min-width: 576px) and (max-width: 992px) {
+    html {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 3.125rem;
+    }
+    .card_title {
+        flex-wrap: wrap;
+    }
   }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media screen and (min-width: 992px) {
-    
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+   
   }
-  
-  /* Extra large devices (large desktops, 1200px and up) */
   @media screen and (min-width: 1200px) {
-    
+    html {
+        font-size: 18px;
+    }
+   
   }
