@@ -518,9 +518,7 @@
         width: 25%;
     }
     .testimonials-aside-img {
-        /* width: 50%; */
-        flex-grow: 1;
-        /* flex-shrink: 1; */
+        /* flex-grow: 1;  */
         border: #ffffff 3rem solid;
         border-radius: 50%;
         background: white;

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Rocket Design</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -328,6 +329,38 @@
 
     <div class="contact-wrapper wrapper--large" id="contact">
         <img src="images/layout/typist.png" alt="a smiling typist" class="contact-aside_img wrapper-img--bottom">
+        <main class="contact-main wrapper-main">
+            <form action="#" class="card-wrapper contact-form">
+                <legend>Send Us a Message<legend>
+                <fieldset class="contact-form_item">
+                    <label for="mail">Your Email*</label>
+                    <input type="text" id="mail" name="user_email">
+                </fieldset>
+                <fieldset class="contact-form_item">
+                    <label for="name">Your Name*</label>
+                    <input type="text" id="name" name="user_name">
+                </fieldset>
+                <fieldset class="contact-form_item">
+                    <label for="phone">Phone Number*</label>
+                    <input type="text" id="phone" name="phone_number">
+                </fieldset>
+                <fieldset class="contact-form_item">
+                    <label for="subjectLine">Subject</label>
+                    <input type="text">
+                </fieldset>
+                <fieldset class="contact-form_item">
+                    <label for="msg">Your Message</label>
+                    <textarea id="msg" name="user_message">
+                    </textarea>
+                </fieldset>
+                <fieldset class="contact-form_item">
+                    <label for="" class="contact-form_
+                    confirm">By sending this message, you confirm that you have read and agreed to our privacy-policy.</label>
+                    <input type="checkbox">
+                </fieldset>
+                <input type="button" value="Submit" class="call-to-action-btn call-to-action-btn--blue">
+            </form>
+        </main>
         <footer class="contact-footer" id="end">
             <aside class="contact-footer_aside">
                 <p class="p--white">Corrupti sed ipsum neque fuga, magnam omnis distinctio voluptatem quas, earum aspernatur sunt. Magni, perferendis quis harum corporis facilis velit quae voluptatibus!</p>
@@ -377,38 +410,7 @@
                 </section>
             </nav>
         </footer>
-        <main class="contact-main wrapper-main">
-            <form action="#" class="card-wrapper contact-form">
-                <legend>Send Us a Message<legend>
-                <fieldset class="contact-form_item">
-                    <label for="mail">Your Email*</label>
-                    <input type="text" id="mail" name="user_email">
-                </fieldset>
-                <fieldset class="contact-form_item">
-                    <label for="name">Your Name*</label>
-                    <input type="text" id="name" name="user_name">
-                </fieldset>
-                <fieldset class="contact-form_item">
-                    <label for="phone">Phone Number*</label>
-                    <input type="text" id="phone" name="phone_number">
-                </fieldset>
-                <fieldset class="contact-form_item">
-                    <label for="subjectLine">Subject</label>
-                    <input type="text">
-                </fieldset>
-                <fieldset class="contact-form_item">
-                    <label for="msg">Your Message</label>
-                    <textarea id="msg" name="user_message">
-                    </textarea>
-                </fieldset>
-                <fieldset class="contact-form_item">
-                    <label for="" class="contact-form_
-                    confirm">By sending this message, you confirm that you have read and agreed to our privacy-policy.</label>
-                    <input type="checkbox">
-                </fieldset>
-                <input type="button" value="Submit" class="call-to-action-btn call-to-action-btn--blue">
-            </form>
-        </main>
+        
         
     </div>
 
