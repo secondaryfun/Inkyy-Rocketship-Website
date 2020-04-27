@@ -685,7 +685,7 @@
     .body-nav, .lp_wrapper {
         position: unset;
     }
-    .hide-on-small, .body-wrapper_header_logo, .call-to-action-btn, .testimonials-aside, .testimonials-main_dots-img-2 {
+    .hide-on-small,.line-break, .cases-wrapper_img, .body-wrapper_header_logo, .call-to-action-btn, .testimonials-aside, .testimonials-main_dots-img-2 {
         display: none;
     }
     .sticky-on-small {
@@ -708,6 +708,13 @@
         font-size: 2rem;
         background-color: #0e77ff;
         border-top: 1px solid #ffffff;
+    }
+    .btn-square {
+        background: white;
+        border: 5px solid #0e77ff;
+        margin: 1px 0;
+        align-items: center;
+        height: 4rem;;
     }
     h2 {
         font-size: 2rem;
@@ -737,11 +744,12 @@
     }
     .services-section {
         display: none;
+        margin: 0;
     }
     .services-section .active {
-        margin: 0;
+        /* margin: 0;
         padding: 2rem;
-        width: 100%;
+        width: 100%; */
     }
     .services-section .card_title {
         border: none;
@@ -758,9 +766,13 @@
     .workflow-card {
         width: 80%;
     }
+    .workflow-card_button {
+        width: 100%;
+    }
     .coretech-header {
         background: #0e77ff;
         border: none;
+        padding-top: 1rem;
     }
     .coretech-aside {
         display: none;
@@ -772,11 +784,41 @@
     }
     .coretech-header_nav {
         display: flex;
+        margin: 2rem 0;
     }
     .icon-box {
         width: auto;
+        margin: 1rem;
     }
-    
+    .testimonials-main_header {
+        display: none;
+    }
+    .testimonials-main_card {
+        margin: 3rem 0;
+    }
+    .testimonials-main_header {
+        padding: 0 2rem;
+    }
+    .testimonials-main_header .card_name{
+        display: flex;
+        background:#0e77ff;
+        color: white;
+    }
+    .atom-icon {
+        display: none;
+    }
+    .testimonials-main_nav {
+        margin: 2rem;
+    }
+    .cases-card--padding {
+        padding: 0;
+    }
+    .contact-footer {
+        background: #0e77ff;
+    }
+    .contact-footer_list_row .card_title {
+        justify-content: center;
+    }
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
   }
