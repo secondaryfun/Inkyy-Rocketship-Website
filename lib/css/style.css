@@ -60,7 +60,7 @@
         color: #ffffff;
         text-decoration: none;
         height: 100%;
-        margin: 0 1.25rem;
+        margin: 0 2%;
         padding: 1.03125rem 0;
     }
     a:hover {
@@ -109,6 +109,9 @@
 }
 /*<<<<<<<<<<<<BUTTONS & ARROWS>>>>>>>>>>>*/
 @media screen {
+    button {
+        border: none;
+    }
     .call-to-action-btn {
         width: 15rem;
         height: 4.5rem;
@@ -229,6 +232,9 @@
 }
 /* <<<<<<<<<<<<SCREEN LAYOUT>>>>>>>>>>>>> */
 @media screen {
+    .set-cover {
+        object-fit: cover;
+    }
     .hidden {
         display: none;
     }   
@@ -243,20 +249,21 @@
         grid-template-rows: 3fr 4fr 3fr;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 5px;
+        overflow: hidden;
     }
     .wrapper-img {
         justify-self: stretch;
         align-self: start;
         grid-row: 1 / span 3;
         grid-column: 1 / span 12; 
-        object-fit: fill;
+        object-fit: cover;
         align-content: stretch;
     }
     .wrapper-img--bottom {
-        justify-self: stretch;
+        justify-self: center;
         align-self: end;
         grid-row: 2 / span 2;
-        grid-column: 1 / span 12;        
+        grid-column: 1 / span 12;  
     }
     .wrapper-header {
         grid-area: head;
@@ -503,16 +510,24 @@
         display: flex;
         background: #0e77ff;
         justify-content: flex-end;
+        /* align-content: center; */
     }
     .testimonials-aside-img-2 {
         align-self: flex-start;
         justify-self: flex-end;
+        width: 25%;
     }
     .testimonials-aside-img {
-        place-self: center;
+        /* width: 50%; */
+        flex-grow: 1;
+        /* flex-shrink: 1; */
         border: #ffffff 3rem solid;
         border-radius: 50%;
         background: white;
+        align-self: center;
+    }
+    .testimonials-aside-img, .testimonials-aside-img {
+        /* object-fit: cover; */
     }
     .testimonials-main {
         display: flex;
@@ -551,9 +566,12 @@
         grid-row: 2 / span 1;
         grid-column: 2 / span 10;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         align-items: flex-start;
         justify-content: center;
+    }
+    .cases-img {
+        object-fit: cover;
     }
     .cases-footer {
         grid-row: 3 / span 1;
@@ -563,6 +581,7 @@
     .cases-card {
         margin: 0 1rem;
         background-color: #ffffff;
+        width: 30%
     }
     .cases-card:hover {
         box-shadow: 0 0 40px rgba(14, 119, 255, 0.15);
@@ -656,9 +675,149 @@
 /* Xtra small devices (portrait phones) */
 @media screen and (max-width: 576px) {
     html {font-size: 12px}
-   
-    a {
+    .wrapper--large,.wrapper--large > *,.wrapper--large > * > * {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .body-nav, .lp_wrapper {
+        position: unset;
+    }
+    .hide-on-small,.line-break, .cases-wrapper_img, .body-wrapper_header_logo, .call-to-action-btn, .testimonials-aside, .testimonials-main_dots-img-2 {
+        display: none;
+    }
+    .sticky-on-small {
+        display: flex;
+        justify-content: center;
+        position: -webkit-sticky;
+        position: sticky;
+        top: -1px;
+        background-color: #0e77ff;
+        z-index: 4;
+    }
+    .wrapper-header_nav {
+        background-color: #ffffff;
+        justify-content: center;
+    }
+    .wrapper-header_nav > * {
+        width: 100%;
+        border-radius: 1rem;
+        text-align: center;
         font-size: 2rem;
+        background-color: #0e77ff;
+        border-top: 1px solid #ffffff;
+    }
+    .btn-square {
+        background: white;
+        border: 5px solid #0e77ff;
+        margin: 1px 0;
+        align-items: center;
+        height: 4rem;;
+    }
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .call-to-action-btn {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    .call-to-action-btn img {
+        transform: rotate(90deg);
+    }
+    .card_title {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        justify-content: space-around;
+        border-bottom: #0e77ff solid 5px;
+    }
+    .card_icon  {
+        font-size: 3rem;
+    }
+    .services-card_nav {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .services-section {
+        display: none;
+        margin: 0;
+    }
+    .services-section .active {
+        /* margin: 0;
+        padding: 2rem;
+        width: 100%; */
+    }
+    .services-section .card_title {
+        border: none;
+    }
+    .workflow-img {
+        width: 80%;
+        position: relative;
+        bottom: -10rem;
+    }
+    .workflow-header {
+        padding: 2rem;
+        background: #0e77ff
+    }
+    .workflow-card {
+        width: 80%;
+    }
+    .workflow-card_button {
+        width: 100%;
+    }
+    .coretech-header {
+        background: #0e77ff;
+        border: none;
+        padding-top: 1rem;
+    }
+    .coretech-aside {
+        display: none;
+    }
+    #coretechAside-1, .coretech-aside .active {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .coretech-header_nav {
+        display: flex;
+        margin: 2rem 0;
+    }
+    .icon-box {
+        width: auto;
+        margin: 1rem;
+    }
+    .testimonials-main_header {
+        display: none;
+    }
+    .testimonials-main_card {
+        margin: 3rem 0;
+    }
+    .testimonials-main_header {
+        padding: 0 2rem;
+    }
+    .testimonials-main_header .card_name{
+        display: flex;
+        background:#0e77ff;
+        color: white;
+    }
+    .atom-icon {
+        display: none;
+    }
+    .testimonials-main_nav {
+        margin: 2rem;
+    }
+    .cases-card--padding {
+        padding: 0;
+    }
+    .contact-footer {
+        background: #0e77ff;
+    }
+    .contact-footer_list_row .card_title {
+        justify-content: center;
     }
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {
