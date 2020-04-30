@@ -3,18 +3,20 @@
 A responsive website build with html/css/javascript.  
 ## Getting Started
 
-To view the site, visit https://secondaryfun.github.io/ga-sei-web1/.
+To view the site, visit [website](https://secondaryfun.github.io/ga-sei-web1/).
 
 ## Built With
 
-HTML, CSS, Javascript
-With special thanks to:
+HTML, CSS, Javascript***
+with special thanks to:
 * [Avocode](http://avocode.com) - Design Software
 
 
 ## Contributing
 
-As a portfolio piece, contributions will not be accepted.  Please message me any thoughts, opinions, or suggestions you might have.
+As a portfolio piece, contributions will not be accepted.  
+
+Please message me any thoughts, opinions, or suggestions you might have.
 
 ## Versioning
 
