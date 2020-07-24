@@ -1,4 +1,4 @@
-# Website Mockup - Rocketship
+# Website Mockup - Inkyy Rocketship
 
 A website skeleton build in HTML and CSS.  No Javascript allows on this mockup.
 
